@@ -5,8 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.1</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>2.7.2</version>
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.chainsys</groupId>
 	<artifactId>Library_Management_System</artifactId>
@@ -15,26 +15,17 @@
 	<name>Library_Management_System</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
-		
-		
-
-
-
-
-		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
-         <dependency>
-             <groupId>org.springframework.boot</groupId>
-              <artifactId>spring-boot-starter-jdbc</artifactId>
-         </dependency>
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -42,22 +33,17 @@
 			<optional>true</optional>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jasper -->
-<dependency>
-    <groupId>org.apache.tomcat</groupId>
-    <artifactId>tomcat-jasper</artifactId>
-    <version>10.1.17</version>
-</dependency>
-              <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>8.0.15</version>
-             </dependency>
-
 		<dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
-			<scope>runtime</scope>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jasper</artifactId>
+			<version>9.0.62</version>
 		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.15</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
@@ -74,7 +60,6 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -91,5 +76,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
